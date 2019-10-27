@@ -6,7 +6,7 @@
 #include "keymap_swedish.h"
 
 enum planck_keycodes {
-        RGB_SLD = EZ_SAFE_RANGE,
+        RGB_SLD = SAFE_RANGE,
 };
 
 enum planck_layers {
@@ -46,7 +46,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                 ______ , ______ , SE_SCLN , SE_COLN , ______  , ______ , ______  , ______     , ______ , ______  , ______  , ______  ,
                 ______ , ______ , SE_QUO2 , KC_HASH , KC_PERC , SE_EQL , SE_PLUS , SE_DLR_MAC , SE_AT  , SE_APOS , SE_ACUT , SE_BSLS ,
                 ______ , ______ , ______  , ______  , ______  , ______ , ______  , ______     , ______ , ______  , ______  , ______  ,
-                ______ , ______ , ______  , ______  , ______  , ______ , ______  , ______     , ______ , ______  , ______  , ______) ,
+                ______ , ______ , ______  , ______  , ______  , ______ , ______  , ______     , ______ , ______  , ______  , ______
+                ) ,
 
         [_RAISE] = LAYOUT_planck_grid(
                 ______  , KC_1    , KC_2    , KC_3    , KC_4    , KC_5    , KC_6    , KC_7    , KC_8    , KC_9    , KC_0    , KC_BSPACE ,
@@ -59,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                 ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ ,
                 ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ ,
                 ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ ,
-                ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ ,
+                ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______ , ______
                 ),
 
 };
@@ -67,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 bool process_record_user(uint16_t keycode, keyrecord_t *record)
 {
         (void)keycode;
-        (void)recrod;
+        (void)record;
         return true;
 }
 
